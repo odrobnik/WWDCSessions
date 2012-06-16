@@ -120,28 +120,28 @@
     NSString *resultString = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
     NSRange aRange;
     
-    //check for 202
+    // check for 202
     aRange = [resultString rangeOfString:kHTTPHeader202];
-    if (aRange.location != NSNotFound) {
+    // no 202 received, so we check explicitly against 404
+    if (aRange.location == NSNotFound) {
+        //check for 404
+        aRange = [resultString rangeOfString:kHTTPHeader404];
+        // OK, we got a 404 - site not available
+        if (aRange.location != NSNotFound) {
+            self.sessionsAvailable = NO;
+            self.statusItem.image = [NSImage imageNamed:@"WWDCSessions-Statusbaricon-Normal"];
+            self.statusItem.alternateImage = [NSImage imageNamed:@"WWDCSessions-Statusbaricon-Highlight"];
+            [[self.statusItemMenu itemAtIndex:2] setHidden:YES];
+            [[self.statusItemMenu itemAtIndex:3] setHidden:YES];
+        }
+
+    // got HTTP header 202 - OK
+    } else {
         self.sessionsAvailable = YES;
-    }
-    
-    //check for 404
-    aRange = [resultString rangeOfString:kHTTPHeader404];
-    if (aRange.location != NSNotFound) {
-        self.sessionsAvailable = NO;
-    }
-    
-    if (self.sessionsAvailable) {
         self.statusItem.image = [NSImage imageNamed:@"WWDCSessions-Statusbaricon-Available"];
         self.statusItem.alternateImage = [NSImage imageNamed:@"WWDCSessions-Statusbaricon-Available"];
         [[self.statusItemMenu itemAtIndex:2] setHidden:NO];
         [[self.statusItemMenu itemAtIndex:3] setHidden:NO];
-    } else {
-        self.statusItem.image = [NSImage imageNamed:@"WWDCSessions-Statusbaricon-Normal"];
-        self.statusItem.alternateImage = [NSImage imageNamed:@"WWDCSessions-Statusbaricon-Highlight"];
-        [[self.statusItemMenu itemAtIndex:2] setHidden:YES];
-        [[self.statusItemMenu itemAtIndex:3] setHidden:YES];
     }
 }
 
