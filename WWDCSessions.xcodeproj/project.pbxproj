@@ -1,0 +1,384 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA47B5AB158BF39C009C131C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA47B5AA158BF39C009C131C /* Cocoa.framework */; };
+		AA47B5B5158BF39C009C131C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA47B5B3158BF39C009C131C /* InfoPlist.strings */; };
+		AA47B5B7158BF39C009C131C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47B5B6158BF39C009C131C /* main.m */; };
+		AA47B5BB158BF39C009C131C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = AA47B5B9158BF39C009C131C /* Credits.rtf */; };
+		AA47B5BE158BF39C009C131C /* CNAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47B5BD158BF39C009C131C /* CNAppDelegate.m */; };
+		AA47B5C1158BF39C009C131C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA47B5BF158BF39C009C131C /* MainMenu.xib */; };
+		AA47B5CF158BF7AA009C131C /* WWDCSessions-Statusbaricon-Highlight.png in Resources */ = {isa = PBXBuildFile; fileRef = AA47B5CD158BF7AA009C131C /* WWDCSessions-Statusbaricon-Highlight.png */; };
+		AA47B5D0158BF7AA009C131C /* WWDCSessions-Statusbaricon-Normal.png in Resources */ = {isa = PBXBuildFile; fileRef = AA47B5CE158BF7AA009C131C /* WWDCSessions-Statusbaricon-Normal.png */; };
+		AA47B5D6158BF8A9009C131C /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA47B5D2158BF8A9009C131C /* Preferences.xib */; };
+		AA47B5D7158BF8A9009C131C /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47B5D4158BF8A9009C131C /* PreferencesController.m */; };
+		AA47B5DD158C1321009C131C /* WWDCSessions-Statusbaricon-Available.png in Resources */ = {isa = PBXBuildFile; fileRef = AA47B5DC158C1321009C131C /* WWDCSessions-Statusbaricon-Available.png */; };
+		AA47B5E5158C182F009C131C /* NSObject+NotificationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47B5E4158C182F009C131C /* NSObject+NotificationAdditions.m */; };
+		AA47B5E7158C1EC9009C131C /* WWDCsessions-Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = AA47B5E6158C1EC9009C131C /* WWDCsessions-Icon.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA47B5A6158BF39C009C131C /* WWDCSessions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WWDCSessions.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA47B5AA158BF39C009C131C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AA47B5AD158BF39C009C131C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AA47B5AE158BF39C009C131C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AA47B5AF158BF39C009C131C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA47B5B2158BF39C009C131C /* WWDCSessions-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WWDCSessions-Info.plist"; sourceTree = "<group>"; };
+		AA47B5B4158BF39C009C131C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA47B5B6158BF39C009C131C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA47B5B8158BF39C009C131C /* WWDCSessions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WWDCSessions-Prefix.pch"; sourceTree = "<group>"; };
+		AA47B5BA158BF39C009C131C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		AA47B5BC158BF39C009C131C /* CNAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CNAppDelegate.h; sourceTree = "<group>"; };
+		AA47B5BD158BF39C009C131C /* CNAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CNAppDelegate.m; sourceTree = "<group>"; };
+		AA47B5C0158BF39C009C131C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AA47B5CD158BF7AA009C131C /* WWDCSessions-Statusbaricon-Highlight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WWDCSessions-Statusbaricon-Highlight.png"; sourceTree = "<group>"; };
+		AA47B5CE158BF7AA009C131C /* WWDCSessions-Statusbaricon-Normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WWDCSessions-Statusbaricon-Normal.png"; sourceTree = "<group>"; };
+		AA47B5D2158BF8A9009C131C /* Preferences.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Preferences.xib; sourceTree = "<group>"; };
+		AA47B5D3158BF8A9009C131C /* PreferencesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesController.h; sourceTree = "<group>"; };
+		AA47B5D4158BF8A9009C131C /* PreferencesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesController.m; sourceTree = "<group>"; };
+		AA47B5D5158BF8A9009C131C /* PreferencesKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesKeys.h; sourceTree = "<group>"; };
+		AA47B5D9158BFABE009C131C /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
+		AA47B5DC158C1321009C131C /* WWDCSessions-Statusbaricon-Available.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WWDCSessions-Statusbaricon-Available.png"; sourceTree = "<group>"; };
+		AA47B5E3158C182F009C131C /* NSObject+NotificationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NotificationAdditions.h"; sourceTree = "<group>"; };
+		AA47B5E4158C182F009C131C /* NSObject+NotificationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NotificationAdditions.m"; sourceTree = "<group>"; };
+		AA47B5E6158C1EC9009C131C /* WWDCsessions-Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "WWDCsessions-Icon.icns"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA47B5A3158BF39B009C131C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA47B5AB158BF39C009C131C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA47B59B158BF39B009C131C = {
+			isa = PBXGroup;
+			children = (
+				AA47B5E6158C1EC9009C131C /* WWDCsessions-Icon.icns */,
+				AA47B5B0158BF39C009C131C /* WWDCSessions */,
+				AA47B5A9158BF39C009C131C /* Frameworks */,
+				AA47B5A7158BF39C009C131C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA47B5A7158BF39C009C131C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA47B5A6158BF39C009C131C /* WWDCSessions.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA47B5A9158BF39C009C131C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA47B5AA158BF39C009C131C /* Cocoa.framework */,
+				AA47B5AC158BF39C009C131C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA47B5AC158BF39C009C131C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA47B5AD158BF39C009C131C /* AppKit.framework */,
+				AA47B5AE158BF39C009C131C /* CoreData.framework */,
+				AA47B5AF158BF39C009C131C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		AA47B5B0158BF39C009C131C /* WWDCSessions */ = {
+			isa = PBXGroup;
+			children = (
+				AA47B5BC158BF39C009C131C /* CNAppDelegate.h */,
+				AA47B5BD158BF39C009C131C /* CNAppDelegate.m */,
+				AA47B5BF158BF39C009C131C /* MainMenu.xib */,
+				AA47B5E2158C181B009C131C /* Categories */,
+				AA47B5D1158BF881009C131C /* GUI */,
+				AA47B5B1158BF39C009C131C /* Supporting Files */,
+			);
+			path = WWDCSessions;
+			sourceTree = "<group>";
+		};
+		AA47B5B1158BF39C009C131C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA47B5CC158BF7AA009C131C /* Images */,
+				AA47B5B2158BF39C009C131C /* WWDCSessions-Info.plist */,
+				AA47B5B3158BF39C009C131C /* InfoPlist.strings */,
+				AA47B5B6158BF39C009C131C /* main.m */,
+				AA47B5D9158BFABE009C131C /* Globals.h */,
+				AA47B5B8158BF39C009C131C /* WWDCSessions-Prefix.pch */,
+				AA47B5B9158BF39C009C131C /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA47B5CC158BF7AA009C131C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				AA47B5CD158BF7AA009C131C /* WWDCSessions-Statusbaricon-Highlight.png */,
+				AA47B5CE158BF7AA009C131C /* WWDCSessions-Statusbaricon-Normal.png */,
+				AA47B5DC158C1321009C131C /* WWDCSessions-Statusbaricon-Available.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		AA47B5D1158BF881009C131C /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				AA47B5D8158BF8B4009C131C /* Preferences */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		AA47B5D8158BF8B4009C131C /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				AA47B5D5158BF8A9009C131C /* PreferencesKeys.h */,
+				AA47B5D3158BF8A9009C131C /* PreferencesController.h */,
+				AA47B5D4158BF8A9009C131C /* PreferencesController.m */,
+				AA47B5D2158BF8A9009C131C /* Preferences.xib */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		AA47B5E2158C181B009C131C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				AA47B5E3158C182F009C131C /* NSObject+NotificationAdditions.h */,
+				AA47B5E4158C182F009C131C /* NSObject+NotificationAdditions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA47B5A5158BF39B009C131C /* WWDCSessions */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA47B5C4158BF39C009C131C /* Build configuration list for PBXNativeTarget "WWDCSessions" */;
+			buildPhases = (
+				AA47B5CB158BF3DE009C131C /* Update Build Number */,
+				AA47B5A2158BF39B009C131C /* Sources */,
+				AA47B5A3158BF39B009C131C /* Frameworks */,
+				AA47B5A4158BF39B009C131C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WWDCSessions;
+			productName = WWDCSessions;
+			productReference = AA47B5A6158BF39C009C131C /* WWDCSessions.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA47B59D158BF39B009C131C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CN;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = "cocoa:naut";
+			};
+			buildConfigurationList = AA47B5A0158BF39B009C131C /* Build configuration list for PBXProject "WWDCSessions" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AA47B59B158BF39B009C131C;
+			productRefGroup = AA47B5A7158BF39C009C131C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA47B5A5158BF39B009C131C /* WWDCSessions */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA47B5A4158BF39B009C131C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA47B5B5158BF39C009C131C /* InfoPlist.strings in Resources */,
+				AA47B5BB158BF39C009C131C /* Credits.rtf in Resources */,
+				AA47B5C1158BF39C009C131C /* MainMenu.xib in Resources */,
+				AA47B5CF158BF7AA009C131C /* WWDCSessions-Statusbaricon-Highlight.png in Resources */,
+				AA47B5D0158BF7AA009C131C /* WWDCSessions-Statusbaricon-Normal.png in Resources */,
+				AA47B5D6158BF8A9009C131C /* Preferences.xib in Resources */,
+				AA47B5DD158C1321009C131C /* WWDCSessions-Statusbaricon-Available.png in Resources */,
+				AA47B5E7158C1EC9009C131C /* WWDCsessions-Icon.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AA47B5CB158BF3DE009C131C /* Update Build Number */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Update Build Number";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "cd ${EXECUTABLE_NAME}\nBASE_PATH=`pwd`\nBUNDLE_VERSION=`defaults read ${BASE_PATH}/${EXECUTABLE_NAME}-Info.plist CFBundleVersion`\nNEW_BUNDLE_VERSION=$[$BUNDLE_VERSION + 1]\ndefaults write ${BASE_PATH}/${EXECUTABLE_NAME}-Info.plist CFBundleVersion $NEW_BUNDLE_VERSION";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA47B5A2158BF39B009C131C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA47B5B7158BF39C009C131C /* main.m in Sources */,
+				AA47B5BE158BF39C009C131C /* CNAppDelegate.m in Sources */,
+				AA47B5D7158BF8A9009C131C /* PreferencesController.m in Sources */,
+				AA47B5E5158C182F009C131C /* NSObject+NotificationAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA47B5B3158BF39C009C131C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA47B5B4158BF39C009C131C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AA47B5B9158BF39C009C131C /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA47B5BA158BF39C009C131C /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		AA47B5BF158BF39C009C131C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA47B5C0158BF39C009C131C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA47B5C2158BF39C009C131C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AA47B5C3158BF39C009C131C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AA47B5C5158BF39C009C131C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WWDCSessions/WWDCSessions-Prefix.pch";
+				INFOPLIST_FILE = "WWDCSessions/WWDCSessions-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AA47B5C6158BF39C009C131C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WWDCSessions/WWDCSessions-Prefix.pch";
+				INFOPLIST_FILE = "WWDCSessions/WWDCSessions-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA47B5A0158BF39B009C131C /* Build configuration list for PBXProject "WWDCSessions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA47B5C2158BF39C009C131C /* Debug */,
+				AA47B5C3158BF39C009C131C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA47B5C4158BF39C009C131C /* Build configuration list for PBXNativeTarget "WWDCSessions" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA47B5C5158BF39C009C131C /* Debug */,
+				AA47B5C6158BF39C009C131C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA47B59D158BF39B009C131C /* Project object */;
+}
