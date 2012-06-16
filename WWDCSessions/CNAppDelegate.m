@@ -102,28 +102,21 @@
 
 - (void)checkForSessions
 {
-    NSTask *task;
-    task = [[NSTask alloc] init];
+    NSTask *task = [[NSTask alloc] init];
     [task setLaunchPath: @"/usr/bin/curl"];
     
-    NSArray *arguments;
     self.sessionURL = [NSString stringWithFormat:kCNSessionVideosBaseURL, self.currentYear];
-    arguments = [NSArray arrayWithObjects: @"\-\-silent", @"\-\-head", self.sessionURL, nil];
+    NSArray *arguments = [NSArray arrayWithObjects: @"\-\-silent", @"\-\-head", self.sessionURL, nil];
     [task setArguments: arguments];
     
-    NSPipe *pipe;
-    pipe = [NSPipe pipe];
+    NSPipe *pipe = [NSPipe pipe];
     [task setStandardOutput: pipe];
     [task setStandardInput:[NSPipe pipe]];
     
-    NSFileHandle *file;
-    file = [pipe fileHandleForReading];
-    
+    NSFileHandle *file = [pipe fileHandleForReading];
     [task launch];
     
-    NSData *data;
-    data = [file readDataToEndOfFile];
-    
+    NSData *data = [file readDataToEndOfFile];
     NSString *resultString = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
     NSRange aRange;
     
@@ -142,7 +135,7 @@
     if (self.sessionsAvailable) {
         self.statusItem.image = [NSImage imageNamed:@"WWDCSessions-Statusbaricon-Available"];
         self.statusItem.alternateImage = [NSImage imageNamed:@"WWDCSessions-Statusbaricon-Available"];
-       [[self.statusItemMenu itemAtIndex:2] setHidden:NO];
+        [[self.statusItemMenu itemAtIndex:2] setHidden:NO];
         [[self.statusItemMenu itemAtIndex:3] setHidden:NO];
     } else {
         self.statusItem.image = [NSImage imageNamed:@"WWDCSessions-Statusbaricon-Normal"];

@@ -6,5 +6,4 @@
     #import <Cocoa/Cocoa.h>
     #import "Globals.h"
     #import "PreferencesKeys.h"
-    #import "NSObject+NotificationAdditions.h"
 #endif

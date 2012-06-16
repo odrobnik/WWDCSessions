@@ -18,7 +18,6 @@
 		AA47B5D6158BF8A9009C131C /* Preferences.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA47B5D2158BF8A9009C131C /* Preferences.xib */; };
 		AA47B5D7158BF8A9009C131C /* PreferencesController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47B5D4158BF8A9009C131C /* PreferencesController.m */; };
 		AA47B5DD158C1321009C131C /* WWDCSessions-Statusbaricon-Available.png in Resources */ = {isa = PBXBuildFile; fileRef = AA47B5DC158C1321009C131C /* WWDCSessions-Statusbaricon-Available.png */; };
-		AA47B5E5158C182F009C131C /* NSObject+NotificationAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AA47B5E4158C182F009C131C /* NSObject+NotificationAdditions.m */; };
 		AA47B5E7158C1EC9009C131C /* WWDCsessions-Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = AA47B5E6158C1EC9009C131C /* WWDCsessions-Icon.icns */; };
 /* End PBXBuildFile section */
 
@@ -44,8 +43,6 @@
 		AA47B5D5158BF8A9009C131C /* PreferencesKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesKeys.h; sourceTree = "<group>"; };
 		AA47B5D9158BFABE009C131C /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Globals.h; sourceTree = "<group>"; };
 		AA47B5DC158C1321009C131C /* WWDCSessions-Statusbaricon-Available.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WWDCSessions-Statusbaricon-Available.png"; sourceTree = "<group>"; };
-		AA47B5E3158C182F009C131C /* NSObject+NotificationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+NotificationAdditions.h"; sourceTree = "<group>"; };
-		AA47B5E4158C182F009C131C /* NSObject+NotificationAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+NotificationAdditions.m"; sourceTree = "<group>"; };
 		AA47B5E6158C1EC9009C131C /* WWDCsessions-Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = "WWDCsessions-Icon.icns"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +101,6 @@
 				AA47B5BC158BF39C009C131C /* CNAppDelegate.h */,
 				AA47B5BD158BF39C009C131C /* CNAppDelegate.m */,
 				AA47B5BF158BF39C009C131C /* MainMenu.xib */,
-				AA47B5E2158C181B009C131C /* Categories */,
 				AA47B5D1158BF881009C131C /* GUI */,
 				AA47B5B1158BF39C009C131C /* Supporting Files */,
 			);
@@ -152,15 +148,6 @@
 				AA47B5D2158BF8A9009C131C /* Preferences.xib */,
 			);
 			name = Preferences;
-			sourceTree = "<group>";
-		};
-		AA47B5E2158C181B009C131C /* Categories */ = {
-			isa = PBXGroup;
-			children = (
-				AA47B5E3158C182F009C131C /* NSObject+NotificationAdditions.h */,
-				AA47B5E4158C182F009C131C /* NSObject+NotificationAdditions.m */,
-			);
-			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,7 +242,6 @@
 				AA47B5B7158BF39C009C131C /* main.m in Sources */,
 				AA47B5BE158BF39C009C131C /* CNAppDelegate.m in Sources */,
 				AA47B5D7158BF8A9009C131C /* PreferencesController.m in Sources */,
-				AA47B5E5158C182F009C131C /* NSObject+NotificationAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

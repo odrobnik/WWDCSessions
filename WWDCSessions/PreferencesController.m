@@ -10,10 +10,11 @@
 
 
 typedef enum {
-    toolbarItemTagGeneral       = 10
+    toolbarItemTagGeneral = 10
 } toolbarItemTag;
 
 #define CNPrefsToolbarItemGeneralItenfier  @"CNPrefsToolbarItemGeneralItenfier"
+
 
 // ---------------------------------------------------------------------------------------------------------------------
 #pragma mark - Private method declaration
@@ -45,9 +46,6 @@ typedef enum {
 -(void)awakeFromNib {
     [self changeView:toolbarItemGeneral];
     [[[self window] toolbar] setSelectedItemIdentifier:CNPrefsToolbarItemGeneralItenfier];
-    
-    // general preferences
-    
     [self restorePreferences];
 }
 
@@ -67,7 +65,10 @@ typedef enum {
 
 - (void)defaultsChangedNotification
 {
-    [self postNotificationName:kDefaultsChangedNotificationKey userInfo:nil];
+	NSNotificationCenter *nc = [NSNotificationCenter defaultCenter];
+	[nc postNotificationName:kDefaultsChangedNotificationKey
+                      object:self
+                    userInfo:nil];
 }
 
 
@@ -81,15 +82,15 @@ typedef enum {
     if (sender == pollMatrix) {
         [userDefaults setInteger:pollMatrix.selectedRow+1 forKey:kCNPollFrequencyKey];
     }
-
     [self defaultsChangedNotification];
 }
 
 - (IBAction)changeView:(id)sender {
     NSView *aView = nil;
-    switch ([sender tag]) 
-    {
-        case toolbarItemTagGeneral:     aView = viewGeneral; break;
+    switch ([sender tag]) {
+        case toolbarItemTagGeneral:
+            aView = viewGeneral;
+            break;
     } 
     [[self window] setTitle: [sender paletteLabel]];
     [self calculateSizeForView: aView];
