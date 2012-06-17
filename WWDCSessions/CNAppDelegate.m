@@ -86,13 +86,13 @@
     NSLog(@"defaultsChanged notification received.");
     self.userDefaults = [NSUserDefaults standardUserDefaults];
     
-    int pollInterval;
+    NSInteger pollInterval;
     if ([self.userDefaults objectForKey:kCNPollFrequencyKey] != nil) {
         pollInterval = 60 * 60 * [self.userDefaults integerForKey:kCNPollFrequencyKey];
     } else {
         pollInterval = 60 * 60;
     }
-    NSLog(@"poll interval is: %i seconds", pollInterval);
+    NSLog(@"poll interval is: %li seconds", pollInterval);
     self.scheduler = [NSTimer scheduledTimerWithTimeInterval:pollInterval
                                                       target:self 
                                                     selector:@selector(checkForSessions) 
@@ -106,7 +106,7 @@
     [task setLaunchPath: @"/usr/bin/curl"];
     
     self.sessionURL = [NSString stringWithFormat:kCNSessionVideosBaseURL, self.currentYear];
-    NSArray *arguments = [NSArray arrayWithObjects: @"\-\-silent", @"\-\-head", self.sessionURL, nil];
+    NSArray *arguments = [NSArray arrayWithObjects: @"--silent", @"--head", self.sessionURL, nil];
     [task setArguments: arguments];
     
     NSPipe *pipe = [NSPipe pipe];
